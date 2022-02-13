@@ -5,7 +5,7 @@ import {  Row, Col, Button } from 'react-bootstrap';
 import PageLayout from '../components/PageLayout'
 import AuthorIntro from 'components/AuthorIntro'
 
-import {getAllBlogs} from 'lib/api'
+import {getAllBlogs, getPaginatedBlogs} from 'lib/api'
 import FilteringMenu from 'components/FilteringMenu'
 // import {useGetBlogs} from 'actions'
 import { useGetBlogsPages } from 'actions/pagination';
@@ -71,7 +71,7 @@ export default function Home({blogs}) {
 // This function is called during the build time, and provides props to the page.
 // it will create a static page
 export async function getStaticProps() {
-  const blogs = await getAllBlogs({offset: 0, date: 'desc'});
+  const blogs = await getPaginatedBlogs({offset: 0, date: 'desc'});
   return {
     props: {
       blogs
