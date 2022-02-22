@@ -17,8 +17,8 @@ export default function Home({blogs}) {
   // const blogs  = props.blogs
   const [filter, setFilter] = useState(
     {
-    view:{list:1},
-    date: {asc:0}
+    view:{list:0},
+    date: {asc:1}
     }
   )
 

@@ -8,6 +8,7 @@ const CardItem = (props)=>{
 
     const {title, subtitle, date, image, author, slug, link} = props
     console.log("--------->",slug)
+    console.log("link",link)
 
     return(
         
@@ -50,12 +51,14 @@ const CardItem = (props)=>{
             </div>
             
             {
+                
                 link &&
                 <Link {...link}  >
                     <a  className="card-button">
                         Read More
                     </a>
                 </Link>
+                
             }
 
       </Card>

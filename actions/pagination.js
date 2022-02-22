@@ -31,6 +31,7 @@ export const useGetBlogsPages = ({blogs, filter}) => {
       const { data: paginatedBlogs } =  withSWR(useGetBlogs({offset, filter}, initialData));
 
       if (!paginatedBlogs) { return 'Loading...'}
+      
       return paginatedBlogs
       .map(blog =>
         filter.view.list ?

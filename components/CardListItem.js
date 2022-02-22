@@ -24,7 +24,7 @@ export default function CardListItem({title, subtitle, author, link, date}){
             <Card.Text>{subtitle}</Card.Text>
           </Card.Body>
         </div>
-        <a href="#" className="card-button">
+        <a href={link} className="card-button">
           Read More
         </a>
       </Card>
