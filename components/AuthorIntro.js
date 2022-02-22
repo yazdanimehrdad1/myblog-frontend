@@ -14,7 +14,7 @@ export default function AuthorIntro(){
                 width={64}
                 height={64}
                 className="mr-3"
-                src=""
+                src="https://avatars.githubusercontent.com/u/11001227?v=4"
                 alt="Generic placeholder"
                 />
                 <Media.Body>
