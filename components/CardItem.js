@@ -36,9 +36,9 @@ const CardItem = (props)=>{
                         src= 
                         {
                             urlFor(image)
-                            .height(400)
-                            .fit('clip')
-                            .crop('center')
+                            .height(500)
+                            // .fit('scale')
+                            // .crop('center')
                             .url()
                         }
                         alt="Card image cap"

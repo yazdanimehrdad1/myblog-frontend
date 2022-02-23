@@ -1,6 +1,4 @@
 import {useState, useEffect} from 'react'
-
-
 import {  Row, Col, Button } from 'react-bootstrap';
 import PageLayout from '../components/PageLayout'
 import AuthorIntro from 'components/AuthorIntro'
@@ -47,7 +45,6 @@ export default function Home({blogs}) {
               setFilter({...filter, [option]:value})
           }}/>
         <hr/>
-        {/* {JSON.stringify(blogs)}       */}
         <Row className="mb-5">
             {pages}
         </Row>
@@ -71,7 +68,7 @@ export default function Home({blogs}) {
 // This function is called during the build time, and provides props to the page.
 // it will create a static page
 export async function getStaticProps() {
-  const blogs = await getPaginatedBlogs({offset: 0, date: 'desc'});
+  const blogs = await getPaginatedBlogs({offset: 0, date: 'asc'});
   return {
     props: {
       blogs

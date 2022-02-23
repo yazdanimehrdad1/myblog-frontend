@@ -10,11 +10,11 @@ import {useEffect} from 'react'
 
 export const useGetBlogsPages = ({blogs, filter}) => {
 
-    console.log("==========>",blogs)
+  console.log("==========>",blogs)
 
-    // useEffect(() => {
-    //     window.__pagination__init = true;
-    // }, [])
+    useEffect(() => {
+        window.__pagination__init = true;
+    }, [])
   
 
 
@@ -24,9 +24,9 @@ export const useGetBlogsPages = ({blogs, filter}) => {
 
       let initialData = !offset && blogs;
        
-    //   if(typeof window !== 'undefined' && window.__pagination__init) {
-    //       initialData= null
-    //   }
+      if(typeof window !== 'undefined' && window.__pagination__init) {
+          initialData= null
+      }
 
       const { data: paginatedBlogs } =  withSWR(useGetBlogs({offset, filter}, initialData));
 
@@ -44,8 +44,6 @@ export const useGetBlogsPages = ({blogs, filter}) => {
               link={{
                 href: '/blogs/[slug]',
                 as: `/blogs/${blog.slug}`
-                // href: '/blogs/slug1',
-                // as: `/blogs/slug1`
               }}
             />
           </Col>
@@ -60,8 +58,6 @@ export const useGetBlogsPages = ({blogs, filter}) => {
               link={{
                 href: '/blogs/[slug]',
                 as: `/blogs/${blog.slug}`
-                // href: '/blogs/slug1',
-                // as: `/blogs/slug1`
               }}
             />
           </Col>
@@ -77,5 +73,8 @@ export const useGetBlogsPages = ({blogs, filter}) => {
       return (index +1)*3;
     },
     [filter]
+
+    
+
   )
 }
