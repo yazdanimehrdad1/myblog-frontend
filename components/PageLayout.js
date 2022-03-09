@@ -24,9 +24,9 @@ export default function PageLayout(props){
 
             <footer className="page-footer">
                 <div>
-                <a href="#">courses</a>{' | '}
-                <a href="#">github</a>{' | '}
-                <a href="#">facebook</a>
+                <a href="https://twitter.com/mdadyaz">Twitter</a>{' | '}
+                <a href="https://github.com/yazdanimehrdad1">github</a>{' | '}
+                <a href="https://www.linkedin.com/in/mehrdad-yazdani/">LinkedIn</a>
                 </div>
             </footer>
 
