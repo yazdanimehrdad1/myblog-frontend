@@ -20,8 +20,9 @@ export default function AuthorIntro(){
                 <Media.Body>
                 <h5 className="font-weight-bold mb-0">Hello Friends,</h5>
                 <p className="welcome-text">
-                My name is Mehrdad Yazdabi and I am an experienced software engineer and freelance developer.
-                and this is my blog page.
+                Hello, my name is Mehrdad Yazdani. I am a proactive and diligent Full Stack Developer. Expertise in object-oriented programming 
+                technologies such as Python, JavaScript, and REACT. Strong ability to learn new technologies 
+                quickly and bring a critical eye to new projects.
                 </p>
                 </Media.Body>
             </Media>
