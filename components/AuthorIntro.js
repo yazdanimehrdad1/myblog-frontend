@@ -10,7 +10,7 @@ export default function AuthorIntro(){
             {/* AUTHOR INTRO STARTS */}
             <Media className="mb-4 admin-intro">
                 <Image
-                roundedCircle
+                // roundedCircle
                 width={64}
                 height={64}
                 className="mr-3"
