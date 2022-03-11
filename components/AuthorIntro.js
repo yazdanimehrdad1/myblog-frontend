@@ -11,8 +11,8 @@ export default function AuthorIntro(){
             <Media className="mb-4 admin-intro">
                 <Image
                 // roundedCircle
-                width={128}
-                height={128}
+                width={256}
+                height={256}
                 className="mr-3"
                 src="https://avatars.githubusercontent.com/u/11001227?v=4"
                 alt="Generic placeholder"
