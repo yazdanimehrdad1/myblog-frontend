@@ -1,4 +1,5 @@
 import useSWR from 'swr'
+import react from "React"
 
 
 const fetcher = (url)=> fetch(url).then(res => res.json())
